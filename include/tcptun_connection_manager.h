@@ -19,7 +19,7 @@ class ConnectionManager {
    * Constructor
    * @param local_listen_fd local listen fd, set it NON_BLOCKING before pass it as a param
    * @param peer_connected_fd connected fd to remote for tcptun client, it's the connected fd to tcptun server,
-   * for tcptun server it's the connected fd to outside server, set it NON_BLOCKING before pass it as a param
+   * for tcptun server it's the connected fd to tcptcp client, set it NON_BLOCKING before pass it as a param
    * @param ip_port the ip and port information of remote server
    */
   ConnectionManager(const int32_t &local_listen_fd,const int32_t& peer_connected_fd, ip_port_t ip_port);
